@@ -47,78 +47,6 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ],
-      "al-xt.aminv.ir": "45.145.42.43",
-      "IRN.joomoong.com": "91.99.215.169",
-      "al.singbox.ir": [
-        "104.21.48.1",
-        "104.21.80.1",
-        "104.21.112.1",
-        "104.21.96.1",
-        "104.21.64.1",
-        "104.21.32.1",
-        "104.21.16.1",
-        "2606:4700:3030::6815:5001",
-        "2606:4700:3030::6815:7001",
-        "2606:4700:3030::6815:2001",
-        "2606:4700:3030::6815:6001",
-        "2606:4700:3030::6815:1001",
-        "2606:4700:3030::6815:4001",
-        "2606:4700:3030::6815:3001"
-      ],
-      "se.singbox.ir": [
-        "104.21.64.1",
-        "104.21.48.1",
-        "104.21.112.1",
-        "104.21.32.1",
-        "104.21.16.1",
-        "104.21.80.1",
-        "104.21.96.1",
-        "2606:4700:3030::6815:7001",
-        "2606:4700:3030::6815:6001",
-        "2606:4700:3030::6815:4001",
-        "2606:4700:3030::6815:3001",
-        "2606:4700:3030::6815:2001",
-        "2606:4700:3030::6815:1001",
-        "2606:4700:3030::6815:5001"
-      ],
-      "us2.singbox.ir": [
-        "104.21.112.1",
-        "104.21.64.1",
-        "104.21.16.1",
-        "104.21.80.1",
-        "104.21.32.1",
-        "104.21.48.1",
-        "104.21.96.1",
-        "2a06:98c1:3123::",
-        "2a06:98c1:3122::"
-      ],
-      "us1.singbox.ir": [
-        "104.21.48.1",
-        "104.21.16.1",
-        "104.21.32.1",
-        "104.21.112.1",
-        "104.21.64.1",
-        "104.21.80.1",
-        "104.21.96.1",
-        "2a06:98c1:3123::",
-        "2a06:98c1:3122::"
-      ],
-      "am.singbox.ir": [
-        "104.21.112.1",
-        "104.21.64.1",
-        "104.21.80.1",
-        "104.21.16.1",
-        "104.21.32.1",
-        "104.21.48.1",
-        "104.21.96.1",
-        "2606:4700:3030::6815:5001",
-        "2606:4700:3030::6815:1001",
-        "2606:4700:3030::6815:2001",
-        "2606:4700:3030::6815:3001",
-        "2606:4700:3030::6815:7001",
-        "2606:4700:3030::6815:4001",
-        "2606:4700:3030::6815:6001"
       ]
     },
     "servers": [
@@ -189,8 +117,8 @@
       "settings": {
         "vnext": [
           {
-            "address": "al-xt.aminv.ir",
-            "port": 30443,
+            "address": "45.136.5.184",
+            "port": 8569,
             "users": [
               {
                 "encryption": "none",
@@ -206,17 +134,13 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": true,
-          "fingerprint": "firefox",
-          "publicKey": "GI736305oj-DBnSdTzloPEwJlkjX0XlwJuWeU-CTWUY",
+          "fingerprint": "chrome",
+          "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
           "serverName": "stackoverflow.com",
-          "shortId": "6bf34f11d837c30d",
-          "show": false,
-          "spiderX": "/questions/11227809"
+          "shortId": "b2825151d2d5c535",
+          "show": false
         },
         "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -239,6 +163,7 @@
             "users": [
               {
                 "encryption": "none",
+                "flow": "",
                 "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
                 "level": 8
               }
@@ -289,93 +214,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "195.254.165.176",
-            "port": 8569,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
-          "serverName": "stackoverflow.com",
-          "shortId": "b2825151d2d5c535",
-          "show": false,
-          "spiderX": "/questions/11227809"
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "IRN.joomoong.com",
-            "port": 2021,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "firefox",
-          "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
-          "serverName": "stackoverflow.com",
-          "shortId": "b2825151d2d5c535",
-          "show": false,
-          "spiderX": "/questions/11227809"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "93.127.181.165",
             "port": 8569,
             "users": [
@@ -397,8 +235,7 @@
           "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
           "serverName": "stackoverflow.com",
           "shortId": "b2825151d2d5c535",
-          "show": false,
-          "spiderX": "/questions/11227809"
+          "show": false
         },
         "security": "reality",
         "tcpSettings": {
@@ -407,7 +244,48 @@
           }
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "65.109.212.67",
+            "port": 8569,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
+          "serverName": "stackoverflow.com",
+          "shortId": "b2825151d2d5c535",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-4"
     },
     {
       "mux": {
@@ -423,6 +301,7 @@
             "users": [
               {
                 "encryption": "none",
+                "flow": "",
                 "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
                 "level": 8
               }
@@ -462,7 +341,7 @@
           }
         }
       },
-      "tag": "proxy-6"
+      "tag": "proxy-5"
     },
     {
       "mux": {
@@ -494,8 +373,48 @@
           "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
           "serverName": "stackoverflow.com",
           "shortId": "b2825151d2d5c535",
-          "show": false,
-          "spiderX": "/questions/11227809"
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "195.254.165.176",
+            "port": 8569,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
+          "serverName": "stackoverflow.com",
+          "shortId": "b2825151d2d5c535",
+          "show": false
         },
         "security": "reality",
         "tcpSettings": {
@@ -505,297 +424,6 @@
         }
       },
       "tag": "proxy-7"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "45.136.5.184",
-            "port": 8569,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
-          "serverName": "stackoverflow.com",
-          "shortId": "b2825151d2d5c535",
-          "show": false,
-          "spiderX": "/questions/11227809"
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "65.109.212.67",
-            "port": 8569,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
-          "serverName": "stackoverflow.com",
-          "shortId": "b2825151d2d5c535",
-          "show": false,
-          "spiderX": "/questions/11227809"
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "al.singbox.ir",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "host": "",
-          "path": ""
-        },
-        "network": "httpupgrade",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        }
-      },
-      "tag": "proxy-10"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "se.singbox.ir",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "host": "",
-          "path": ""
-        },
-        "network": "httpupgrade",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        }
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "us2.singbox.ir",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "host": "",
-          "path": ""
-        },
-        "network": "httpupgrade",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        }
-      },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "us1.singbox.ir",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "host": "",
-          "path": ""
-        },
-        "network": "httpupgrade",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        }
-      },
-      "tag": "proxy-13"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "am.singbox.ir",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "httpupgradeSettings": {
-          "host": "",
-          "path": ""
-        },
-        "network": "httpupgrade",
-        "sockopt": {
-          "domainStrategy": "UseIPv4v6"
-        }
-      },
-      "tag": "proxy-14"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "195.254.165.59",
-            "port": 8569,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "32e4c5f0-70cf-4ec7-9985-f44906967e67",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "qoQl2yHF4USW9_upUGXcjp8CbBOrNiFcexvc9VOnTmo",
-          "serverName": "stackoverflow.com",
-          "shortId": "b2825151d2d5c535",
-          "show": false,
-          "spiderX": "/questions/11227809"
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-15"
     },
     {
       "protocol": "freedom",
@@ -814,7 +442,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "adminIntelligent Selection",
+  "remarks": "import subIntelligent Selection",
   "routing": {
     "balancers": [
       {
