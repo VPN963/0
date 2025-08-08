@@ -1214,7 +1214,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "#Intelligent Selection",
+  "remarks": "کانفیگ هوشمند",
   "routing": {
     "balancers": [
       {
