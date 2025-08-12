@@ -119,52 +119,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "al.albasehh.ir",
-            "port": 50050,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "0e5dbcdb-dcad-4596-aab2-1267a74f4a7e",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "F29szuNmn6Vww5hgC-uC-NQPEFa6sKghS7T7aDD46kY",
-          "serverName": "ftp.debian.org",
-          "shortId": "af7a",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-1"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "record.persianmizban.com",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
+                "flow": "",
                 "id": "160cc7e4-1e11-44e8-71fd-b162fbb1c83e",
                 "level": 8
               }
@@ -191,6 +151,44 @@
           "path": "/"
         }
       },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "57.129.24.125",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          },
+          "path": "/linkvws"
+        }
+      },
       "tag": "proxy-2"
     },
     {
@@ -207,7 +205,6 @@
             "users": [
               {
                 "encryption": "none",
-                "flow": "",
                 "id": "160cc7e4-1e11-44e8-71fd-b162fbb1c83e",
                 "level": 8
               }
@@ -274,6 +271,34 @@
         "concurrency": -1,
         "enabled": false
       },
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "202.71.13.139",
+            "level": 8,
+            "method": "chacha20-ietf-poly1305",
+            "ota": false,
+            "password": "IcerWuombOQbaNb6M6hOl5",
+            "port": 26524
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
       "protocol": "vmess",
       "settings": {
         "vnext": [
@@ -301,44 +326,6 @@
         "wsSettings": {
           "headers": {
             "Host": "o.metuji.com"
-          },
-          "path": "/linkvws"
-        }
-      },
-      "tag": "proxy-5"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.24.125",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
           },
           "path": "/linkvws"
         }
@@ -435,39 +422,11 @@
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "202.71.13.139",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "IcerWuombOQbaNb6M6hOl5",
-            "port": 26524
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-9"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
       "protocol": "vmess",
       "settings": {
         "vnext": [
           {
-            "address": "57.129.25.25",
+            "address": "15.235.83.228",
             "port": 443,
             "users": [
               {
@@ -489,132 +448,12 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "f.khilei.com"
+            "Host": ""
           },
           "path": "/linkvws"
         }
       },
-      "tag": "proxy-10"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.36.57",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "48f477f3-906a-4bb6-be96-8201d8a62a6d",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "firefox",
-          "serverName": "banana.fullmargintraders.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "banana.fullmargintraders.com"
-          },
-          "path": "/wsv/48f477f3-906a-4bb6-be96-8201d8a62a6d"
-        }
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "us.albasehh.ir",
-            "port": 50063,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "544f5d79-79ed-44ac-a14e-527663209921",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "publicKey": "nVIkALsySFicvk3SP_daE6OfpGED9QH-XQS6r9Gzl1o",
-          "serverName": "ftp.debian.org",
-          "shortId": "abb6a3",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.36.57",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "6c11247b-6078-461a-93d5-22e4df284e6d",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "mirror.fullmargintraders.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "mirror.fullmargintraders.com"
-          },
-          "path": "/wsv/6c11247b-6078-461a-93d5-22e4df284e6d"
-        }
-      },
-      "tag": "proxy-13"
+      "tag": "proxy-9"
     },
     {
       "mux": {
@@ -654,7 +493,84 @@
           "path": "/wsv/0cc731b9-0375-4590-aeaa-7e2611a149fe"
         }
       },
-      "tag": "proxy-14"
+      "tag": "proxy-10"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.21.36.57",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "6c11247b-6078-461a-93d5-22e4df284e6d",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "mirror.fullmargintraders.com",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "mirror.fullmargintraders.com"
+          },
+          "path": "/wsv/6c11247b-6078-461a-93d5-22e4df284e6d"
+        }
+      },
+      "tag": "proxy-11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "57.129.25.25",
+            "port": 443,
+            "users": [
+              {
+                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
+                "level": 8,
+                "security": "auto"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "f.khilei.com"
+          },
+          "path": "/linkvws"
+        }
+      },
+      "tag": "proxy-12"
     },
     {
       "mux": {
@@ -694,45 +610,7 @@
           "path": "/wsv/4c835bff-4f4d-4608-bb21-120099089688"
         }
       },
-      "tag": "proxy-15"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "15.235.83.228",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": ""
-          },
-          "path": "/linkvws"
-        }
-      },
-      "tag": "proxy-16"
+      "tag": "proxy-13"
     },
     {
       "protocol": "freedom",
