@@ -571,37 +571,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "135.125.182.74",
-            "port": 28213,
-            "users": [
-              {
-                "id": "81852771-76fb-4e94-e4f1-4e37a698a49a",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-11"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
             "address": "51.38.64.209",
             "port": 44023,
             "users": [
@@ -622,7 +591,7 @@
           }
         }
       },
-      "tag": "proxy-12"
+      "tag": "proxy-11"
     },
     {
       "mux": {
@@ -660,7 +629,7 @@
           "path": "linkvws"
         }
       },
-      "tag": "proxy-13"
+      "tag": "proxy-12"
     },
     {
       "mux": {
@@ -698,7 +667,7 @@
           "path": "/linkvws"
         }
       },
-      "tag": "proxy-14"
+      "tag": "proxy-13"
     },
     {
       "mux": {
@@ -736,7 +705,7 @@
           "path": "/linkvws"
         }
       },
-      "tag": "proxy-15"
+      "tag": "proxy-14"
     },
     {
       "mux": {
@@ -798,7 +767,7 @@
           }
         }
       },
-      "tag": "proxy-16"
+      "tag": "proxy-15"
     },
     {
       "mux": {
@@ -840,7 +809,7 @@
           }
         }
       },
-      "tag": "proxy-17"
+      "tag": "proxy-16"
     },
     {
       "mux": {
@@ -882,7 +851,7 @@
           }
         }
       },
-      "tag": "proxy-18"
+      "tag": "proxy-17"
     },
     {
       "mux": {
@@ -924,7 +893,7 @@
           }
         }
       },
-      "tag": "proxy-19"
+      "tag": "proxy-18"
     },
     {
       "mux": {
@@ -966,7 +935,7 @@
           }
         }
       },
-      "tag": "proxy-20"
+      "tag": "proxy-19"
     },
     {
       "mux": {
@@ -1004,45 +973,7 @@
           "path": "/linkvws"
         }
       },
-      "tag": "proxy-21"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "134.195.198.147",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "inna.cfd",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "inna.cfd"
-          },
-          "path": "/linkvws"
-        }
-      },
-      "tag": "proxy-22"
+      "tag": "proxy-20"
     },
     {
       "mux": {
@@ -1104,7 +1035,7 @@
           }
         }
       },
-      "tag": "proxy-23"
+      "tag": "proxy-21"
     },
     {
       "mux": {
@@ -1135,7 +1066,7 @@
           }
         }
       },
-      "tag": "proxy-24"
+      "tag": "proxy-22"
     },
     {
       "mux": {
@@ -1166,7 +1097,7 @@
           }
         }
       },
-      "tag": "proxy-25"
+      "tag": "proxy-23"
     },
     {
       "mux": {
@@ -1204,7 +1135,7 @@
           "path": "/linkvws"
         }
       },
-      "tag": "proxy-26"
+      "tag": "proxy-24"
     },
     {
       "mux": {
@@ -1242,7 +1173,7 @@
           "path": "/linkvws"
         }
       },
-      "tag": "proxy-27"
+      "tag": "proxy-25"
     },
     {
       "mux": {
@@ -1273,7 +1204,7 @@
           }
         }
       },
-      "tag": "proxy-28"
+      "tag": "proxy-26"
     },
     {
       "mux": {
@@ -1315,7 +1246,7 @@
           }
         }
       },
-      "tag": "proxy-29"
+      "tag": "proxy-27"
     },
     {
       "mux": {
@@ -1353,38 +1284,7 @@
           "path": "/path/170733132233"
         }
       },
-      "tag": "proxy-30"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "154.90.49.57",
-            "port": 58868,
-            "users": [
-              {
-                "id": "fbffeb6b-b5e5-4f77-8888-c7919fbeb0ad",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-31"
+      "tag": "proxy-28"
     },
     {
       "protocol": "freedom",
