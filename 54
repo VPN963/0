@@ -1,0 +1,671 @@
+{
+  "dns": {
+    "hosts": {
+      "domain:googleapis.cn": "googleapis.com",
+      "dns.alidns.com": [
+        "223.5.5.5",
+        "223.6.6.6",
+        "2400:3200::1",
+        "2400:3200:baba::1"
+      ],
+      "one.one.one.one": [
+        "1.1.1.1",
+        "1.0.0.1",
+        "2606:4700:4700::1111",
+        "2606:4700:4700::1001"
+      ],
+      "dns.cloudflare.com": [
+        "104.16.132.229",
+        "104.16.133.229",
+        "2606:4700::6810:84e5",
+        "2606:4700::6810:85e5"
+      ],
+      "cloudflare-dns.com": [
+        "104.16.248.249",
+        "104.16.249.249",
+        "2606:4700::6810:f8f9",
+        "2606:4700::6810:f9f9"
+      ],
+      "dot.pub": [
+        "1.12.12.12",
+        "120.53.53.53"
+      ],
+      "dns.google": [
+        "8.8.8.8",
+        "8.8.4.4",
+        "2001:4860:4860::8888",
+        "2001:4860:4860::8844"
+      ],
+      "dns.quad9.net": [
+        "9.9.9.9",
+        "149.112.112.112",
+        "2620:fe::fe",
+        "2620:fe::9"
+      ],
+      "common.dot.dns.yandex.net": [
+        "77.88.8.8",
+        "77.88.8.1",
+        "2a02:6b8::feed:0ff",
+        "2a02:6b8:0:1::feed:0ff"
+      ],
+      "al.poonehi.ir": "91.98.78.161",
+      "dl4-fr4-cdn.fastfilecdn.org": "51.68.31.73",
+      "dl4-de4-cdn.fastfilecdn.org": "57.129.90.180",
+      "record.persianmizban.com": "104.21.24.0",
+      "dl4-uk4-cdn.fastfilecdn.org": "51.38.71.67",
+      "fin.poonehi.ir": "46.62.164.94",
+      "dl4-pl4-cdn.fastfilecdn.org": "57.128.231.217",
+      "dl4-tr4-cdn.fastfilecdn.org": "212.64.201.141",
+      "us.poonehi.ir": "5.78.158.217"
+    },
+    "servers": [
+      "1.1.1.1",
+      {
+        "address": "1.1.1.1",
+        "domains": [
+          "domain:googleapis.cn",
+          "domain:gstatic.com"
+        ]
+      },
+      {
+        "address": "223.5.5.5",
+        "domains": [
+          "domain:alidns.com",
+          "domain:doh.pub",
+          "domain:dot.pub",
+          "domain:360.cn",
+          "domain:onedns.net",
+          "geosite:cn"
+        ],
+        "expectIPs": [
+          "geoip:cn"
+        ],
+        "skipFallback": true,
+        "tag": "domestic-dns"
+      }
+    ],
+    "tag": "dns-module"
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "userLevel": 8
+      },
+      "sniffing": {
+        "destOverride": [
+          "http",
+          "tls"
+        ],
+        "enabled": true,
+        "routeOnly": false
+      },
+      "tag": "socks"
+    }
+  ],
+  "log": {
+    "loglevel": "warning"
+  },
+  "observatory": {
+    "enableConcurrency": true,
+    "probeInterval": "10m",
+    "probeUrl": "https://www.gstatic.com/generate_204",
+    "subjectSelector": [
+      "proxy-"
+    ]
+  },
+  "outbounds": [
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "al.poonehi.ir",
+            "port": 50050,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "0e5dbcdb-dcad-4596-aab2-1267a74f4a7e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "F29szuNmn6Vww5hgC-uC-NQPEFa6sKghS7T7aDD46kY",
+          "serverName": "ftp.debian.org",
+          "shortId": "af7a",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl4-fr4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl4-fr4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl4-de4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl4-de4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "record.persianmizban.com",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "160cc7e4-1e01-44e8-71fd-b162fbb1c83e",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "lgoin.persianmizban.com",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "lgoin.persianmizban.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl4-uk4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl4-uk4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fin.poonehi.ir",
+            "port": 50068,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "b9e538e0-5a26-45d7-83df-06c02dbceffa",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "ZJCmGd8IrdSbC7ex8SfndVoNbtcRwd3osMeVdBtuRhw",
+          "serverName": "ftp.debian.org",
+          "shortId": "77",
+          "show": false
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl4-pl4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl4-pl4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "dl4-tr4-cdn.fastfilecdn.org",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "dl4-tr4-cdn.fastfilecdn.org"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "us.poonehi.ir",
+            "port": 50063,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "544f5d79-79ed-44ac-a14e-527663209921",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "nVIkALsySFicvk3SP_daE6OfpGED9QH-XQS6r9Gzl1o",
+          "serverName": "ftp.debian.org",
+          "shortId": "abb6a3",
+          "show": false,
+          "spiderX": "/"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-9"
+    },
+    {
+      "protocol": "freedom",
+      "settings": {
+        "domainStrategy": "UseIP"
+      },
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "settings": {
+        "response": {
+          "type": "http"
+        }
+      },
+      "tag": "block"
+    }
+  ],
+  "remarks": "انقضا 24 مهر",
+  "routing": {
+    "balancers": [
+      {
+        "selector": [
+          "proxy-"
+        ],
+        "strategy": {
+          "type": "leastPing"
+        },
+        "tag": "proxy-round"
+      }
+    ],
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "inboundTag": [
+          "domestic-dns"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "inboundTag": [
+          "dns-module"
+        ],
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "domain": [
+          "domain:googleapis.cn",
+          "domain:gstatic.com"
+        ],
+        "type": "field"
+      },
+      {
+        "network": "udp",
+        "outboundTag": "block",
+        "port": "443",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:private"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:private"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "223.5.5.5",
+          "223.6.6.6",
+          "2400:3200::1",
+          "2400:3200:baba::1",
+          "119.29.29.29",
+          "1.12.12.12",
+          "120.53.53.53",
+          "2402:4e00::",
+          "2402:4e00:1::",
+          "180.76.76.76",
+          "2400:da00::6666",
+          "114.114.114.114",
+          "114.114.115.115",
+          "114.114.114.119",
+          "114.114.115.119",
+          "114.114.114.110",
+          "114.114.115.110",
+          "180.184.1.1",
+          "180.184.2.2",
+          "101.226.4.6",
+          "218.30.118.6",
+          "123.125.81.6",
+          "140.207.198.6",
+          "1.2.4.8",
+          "210.2.4.8",
+          "52.80.66.66",
+          "117.50.22.22",
+          "2400:7fc0:849e:200::4",
+          "2404:c2c0:85d8:901::4",
+          "117.50.10.10",
+          "52.80.52.52",
+          "2400:7fc0:849e:200::8",
+          "2404:c2c0:85d8:901::8",
+          "117.50.60.30",
+          "52.80.60.30"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "domain:alidns.com",
+          "domain:doh.pub",
+          "domain:dot.pub",
+          "domain:360.cn",
+          "domain:onedns.net"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "ip": [
+          "geoip:cn"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "geosite:cn"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
+      },
+      {
+        "balancerTag": "proxy-round",
+        "network": "tcp,udp",
+        "type": "field"
+      }
+    ]
+  }
+}
