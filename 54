@@ -1,6 +1,10 @@
 {
   "dns": {
     "hosts": {
+      "geosite:category-ads-all": "127.0.0.1",
+      "geosite:malware": "127.0.0.1",
+      "geosite:phishing": "127.0.0.1",
+      "geosite:cryptominers": "127.0.0.1",
       "domain:googleapis.cn": "googleapis.com",
       "dns.alidns.com": [
         "223.5.5.5",
@@ -52,37 +56,20 @@
       "fin.poonehi.ir": "46.62.164.94",
       "us.poonehi.ir": "5.78.158.217",
       "record.persianmizban.com": "104.21.24.0",
-      "dl4-de4-cdn.fastfilecdn.org": "57.129.90.180",
-      "fra.iranbuildings.com": "91.107.169.53",
+      "dl5-pl4-cdn.fastfilecdn.org": "57.128.231.217",
+      "ttk.poonehi.ir": "38.60.255.75",
       "pqh38v1.avoipok.shop": "45.82.251.39",
       "pqh38v5.avoipok.shop": "45.82.251.45",
       "pqh38v4.avoipok.shop": "45.82.251.44",
-      "pqh37v6.avoipok.shop": "45.82.251.54",
       "pqh38v3.avoipok.shop": "45.82.251.43",
-      "m22a.vip784.com": "51.83.251.98",
-      "m2a.vip784.com": "141.94.174.9"
+      "pqh37v6.avoipok.shop": "45.82.251.54"
     },
     "servers": [
       "1.1.1.1",
       {
-        "address": "1.1.1.1",
-        "domains": [
-          "domain:googleapis.cn",
-          "domain:gstatic.com"
-        ]
-      },
-      {
         "address": "223.5.5.5",
         "domains": [
-          "domain:alidns.com",
-          "domain:doh.pub",
-          "domain:dot.pub",
-          "domain:360.cn",
-          "domain:onedns.net",
-          "geosite:cn"
-        ],
-        "expectIPs": [
-          "geoip:cn"
+          "geosite:ir"
         ],
         "skipFallback": true,
         "tag": "domestic-dns"
@@ -329,12 +316,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "dl4-de4-cdn.fastfilecdn.org",
+            "address": "dl5-pl4-cdn.fastfilecdn.org",
             "port": 2052,
             "users": [
               {
                 "encryption": "none",
-                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "id": "f4dbf9ab-52a6-408e-85ae-2b1191db5f7e",
                 "level": 8
               }
             ]
@@ -354,7 +341,7 @@
         },
         "wsSettings": {
           "headers": {
-            "Host": "dl4-de4-cdn.fastfilecdn.org"
+            "Host": "dl5-pl4-cdn.fastfilecdn.org"
           },
           "path": "/"
         }
@@ -370,12 +357,51 @@
       "settings": {
         "vnext": [
           {
-            "address": "fra.iranbuildings.com",
-            "port": 2096,
+            "address": "104.21.36.57",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "01860891-2645-420f-a494-a653d960f58d",
+                "id": "48f477f3-906a-4bb6-be96-8201d8a62a6d",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "banana.fullmargintraders.com",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "banana.fullmargintraders.com"
+          },
+          "path": "/wsv/48f477f3-906a-4bb6-be96-8201d8a62a6d"
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ttk.poonehi.ir",
+            "port": 52112,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "363c4362-8076-4dcf-8d87-a14a6ba93eea",
                 "level": 8
               }
             ]
@@ -384,6 +410,15 @@
       },
       "streamSettings": {
         "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "publicKey": "FS5TNy5nEWpovMulvt-0EzhfmrWnhC7otiJa2Cln_XQ",
+          "serverName": "google.com",
+          "shortId": "d5",
+          "show": false
+        },
+        "security": "reality",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -395,33 +430,11 @@
         },
         "tcpSettings": {
           "header": {
-            "request": {
-              "headers": {
-                "Connection": [
-                  "keep-alive"
-                ],
-                "Host": [
-                  "speedtest.net"
-                ],
-                "Pragma": "no-cache",
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "User-Agent": [
-                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
-                ]
-              },
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "version": "1.1"
-            },
-            "type": "http"
+            "type": "none"
           }
         }
       },
-      "tag": "proxy-6"
+      "tag": "proxy-7"
     },
     {
       "mux": {
@@ -463,7 +476,7 @@
           }
         }
       },
-      "tag": "proxy-7"
+      "tag": "proxy-8"
     },
     {
       "mux": {
@@ -505,48 +518,6 @@
           }
         }
       },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "pqh38v4.avoipok.shop",
-            "port": 8880,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "e4824193-4f54-453b-d037-88368e85ef0e",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "grpcSettings": {
-          "authority": "",
-          "health_check_timeout": 20,
-          "idle_timeout": 60,
-          "multiMode": true,
-          "serviceName": ""
-        },
-        "network": "grpc",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        }
-      },
       "tag": "proxy-9"
     },
     {
@@ -558,7 +529,7 @@
       "settings": {
         "vnext": [
           {
-            "address": "pqh37v6.avoipok.shop",
+            "address": "pqh38v4.avoipok.shop",
             "port": 8880,
             "users": [
               {
@@ -642,12 +613,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "m22a.vip784.com",
-            "port": 33801,
+            "address": "pqh37v6.avoipok.shop",
+            "port": 8880,
             "users": [
               {
                 "encryption": "none",
-                "id": "f65e636d-c532-4e6c-b428-015402fd276c",
+                "id": "e4824193-4f54-453b-d037-88368e85ef0e",
                 "level": 8
               }
             ]
@@ -655,7 +626,14 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": true,
+          "serviceName": ""
+        },
+        "network": "grpc",
         "sockopt": {
           "domainStrategy": "UseIP",
           "happyEyeballs": {
@@ -663,138 +641,10 @@
             "maxConcurrentTry": 4,
             "prioritizeIPv6": true,
             "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "request": {
-              "headers": {
-                "Connection": [
-                  "keep-alive"
-                ],
-                "Host": [
-                  "varzesh3.ir"
-                ],
-                "Pragma": "no-cache",
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "User-Agent": [
-                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
-                ]
-              },
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "version": "1.1"
-            },
-            "type": "http"
           }
         }
       },
       "tag": "proxy-12"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "m2a.vip784.com",
-            "port": 33801,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "56c3abea-507d-4559-b1bd-39f339fc4997",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "request": {
-              "headers": {
-                "Connection": [
-                  "keep-alive"
-                ],
-                "Host": [
-                  "varzesh3.ir"
-                ],
-                "Pragma": "no-cache",
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "User-Agent": [
-                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
-                ]
-              },
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "version": "1.1"
-            },
-            "type": "http"
-          }
-        }
-      },
-      "tag": "proxy-13"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "104.21.36.57",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "48f477f3-906a-4bb6-be96-8201d8a62a6d",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "serverName": "banana.fullmargintraders.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "banana.fullmargintraders.com"
-          },
-          "path": "/wsv/48f477f3-906a-4bb6-be96-8201d8a62a6d"
-        }
-      },
-      "tag": "proxy-14"
     },
     {
       "protocol": "freedom",
@@ -843,97 +693,49 @@
         "type": "field"
       },
       {
-        "balancerTag": "proxy-round",
         "domain": [
-          "domain:googleapis.cn",
-          "domain:gstatic.com"
+          "geosite:ir",
+          "geoip:ir",
+          "geoip:private",
+          "uploadb.me",
+          "uploadboy.com",
+          "1ea.ir",
+          "2ad.ir",
+          "themez.top",
+          "192.168.1.0/24",
+          "223.5.5.5/32",
+          "223.6.6.6/32",
+          "2400:3200::1/128",
+          "2400:3200:baba::1/128",
+          "119.29.29.29/32",
+          "1.12.12.12/32",
+          "120.53.53.53/32",
+          "2402:4e00::/128",
+          "2402:4e00:1::/128",
+          "180.76.76.76/32",
+          "2400:da00::6666/128",
+          "114.114.114.114/32",
+          "114.114.115.115/32",
+          "180.184.1.1/32",
+          "180.184.2.2/32",
+          "101.226.4.6/32",
+          "218.30.118.6/32",
+          "123.125.81.6/32",
+          "140.207.198.6/32"
         ],
+        "outboundTag": "direct",
         "type": "field"
       },
       {
-        "network": "udp",
+        "domain": [
+          "geosite:category-ads-all",
+          "geosite:malware",
+          "geosite:phishing",
+          "geosite:cryptominers",
+          "geoip:malware",
+          "geoip:phishing"
+        ],
         "outboundTag": "block",
-        "port": "443",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "geoip:private"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:private"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "223.5.5.5",
-          "223.6.6.6",
-          "2400:3200::1",
-          "2400:3200:baba::1",
-          "119.29.29.29",
-          "1.12.12.12",
-          "120.53.53.53",
-          "2402:4e00::",
-          "2402:4e00:1::",
-          "180.76.76.76",
-          "2400:da00::6666",
-          "114.114.114.114",
-          "114.114.115.115",
-          "114.114.114.119",
-          "114.114.115.119",
-          "114.114.114.110",
-          "114.114.115.110",
-          "180.184.1.1",
-          "180.184.2.2",
-          "101.226.4.6",
-          "218.30.118.6",
-          "123.125.81.6",
-          "140.207.198.6",
-          "1.2.4.8",
-          "210.2.4.8",
-          "52.80.66.66",
-          "117.50.22.22",
-          "2400:7fc0:849e:200::4",
-          "2404:c2c0:85d8:901::4",
-          "117.50.10.10",
-          "52.80.52.52",
-          "2400:7fc0:849e:200::8",
-          "2404:c2c0:85d8:901::8",
-          "117.50.60.30",
-          "52.80.60.30"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "domain:alidns.com",
-          "domain:doh.pub",
-          "domain:dot.pub",
-          "domain:360.cn",
-          "domain:onedns.net"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "ip": [
-          "geoip:cn"
-        ],
-        "outboundTag": "direct",
-        "type": "field"
-      },
-      {
-        "domain": [
-          "geosite:cn"
-        ],
-        "outboundTag": "direct",
         "type": "field"
       },
       {
