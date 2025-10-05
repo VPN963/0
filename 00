@@ -54,12 +54,8 @@
       ],
       "al.poonehi.ir": "91.98.78.161",
       "fin.poonehi.ir": "46.62.164.94",
-      "us.poonehi.ir": "5.78.158.217",
       "record.persianmizban.com": "104.21.24.0",
-      "dl5-de4-cdn.fastfilecdn.org": "57.129.90.180",
-      "dl5-pl4-cdn.fastfilecdn.org": "57.128.231.217",
-      "dl5-fi4-cdn.fastfilecdn.org": "65.109.177.173",
-      "dl5-us4-cdn.fastfilecdn.org": "79.141.160.45"
+      "us.poonehi.ir": "5.78.158.217"
     },
     "servers": [
       "1.1.1.1",
@@ -215,6 +211,54 @@
       "settings": {
         "vnext": [
           {
+            "address": "record.persianmizban.com",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3fc50324-8470-4889-8fbf-653b96dcc978",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": true,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "lgoin.persianmizban.com",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "lgoin.persianmizban.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "us.poonehi.ir",
             "port": 50063,
             "users": [
@@ -254,96 +298,7 @@
           }
         }
       },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "record.persianmizban.com",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "3fc50324-8470-4889-8fbf-653b96dcc978",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "serverName": "lgoin.persianmizban.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "lgoin.persianmizban.com"
-          },
-          "path": "/"
-        }
-      },
       "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "dl5-de4-cdn.fastfilecdn.org",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6f279958-d708-455e-8605-f4b206634bda",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "dl5-de4-cdn.fastfilecdn.org"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-5"
     },
     {
       "mux": {
@@ -359,6 +314,7 @@
             "users": [
               {
                 "encryption": "none",
+                "flow": "",
                 "id": "8b43039b-a321-426f-aa47-b1cd26fd6859",
                 "level": 8
               }
@@ -375,89 +331,7 @@
           "path": "/sandoki"
         }
       },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "dl5-pl4-cdn.fastfilecdn.org",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6f279958-d708-455e-8605-f4b206634bda",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "dl5-pl4-cdn.fastfilecdn.org"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-7"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "dl5-fi4-cdn.fastfilecdn.org",
-            "port": 2052,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "6f279958-d708-455e-8605-f4b206634bda",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "dl5-fi4-cdn.fastfilecdn.org"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-8"
+      "tag": "proxy-5"
     },
     {
       "mux": {
@@ -473,6 +347,7 @@
             "users": [
               {
                 "encryption": "none",
+                "flow": "",
                 "id": "1d73761b-adb7-4bb7-a062-16e31b1d05af",
                 "level": 8
               }
@@ -488,7 +363,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-9"
+      "tag": "proxy-6"
     },
     {
       "mux": {
@@ -499,12 +374,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "dl5-us4-cdn.fastfilecdn.org",
-            "port": 2052,
+            "address": "195.42.233.158",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "flow": "",
+                "id": "2ac027da-fede-4873-bd0c-80b1167654eb",
                 "level": 8
               }
             ]
@@ -513,23 +389,19 @@
       },
       "streamSettings": {
         "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": true,
+          "show": false
         },
         "wsSettings": {
           "headers": {
-            "Host": "dl5-us4-cdn.fastfilecdn.org"
+            "Host": ""
           },
-          "path": "/"
+          "path": "/dcgfdfws"
         }
       },
-      "tag": "proxy-10"
+      "tag": "proxy-7"
     },
     {
       "protocol": "freedom",
@@ -548,7 +420,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "⭐️",
+  "remarks": "⭐️⭐️",
   "routing": {
     "balancers": [
       {
