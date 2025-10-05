@@ -54,11 +54,11 @@
       ],
       "al.poonehi.ir": "91.98.78.161",
       "fin.poonehi.ir": "46.62.164.94",
-      "record.persianmizban.com": "104.21.24.0",
       "us.poonehi.ir": "5.78.158.217",
+      "record.persianmizban.com": "104.21.24.0",
       "dl5-de4-cdn.fastfilecdn.org": "57.129.90.180",
-      "dl5-fi4-cdn.fastfilecdn.org": "65.109.177.173",
       "dl5-pl4-cdn.fastfilecdn.org": "57.128.231.217",
+      "dl5-fi4-cdn.fastfilecdn.org": "65.109.177.173",
       "dl5-us4-cdn.fastfilecdn.org": "79.141.160.45"
     },
     "servers": [
@@ -215,86 +215,6 @@
       "settings": {
         "vnext": [
           {
-            "address": "record.persianmizban.com",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "3fc50324-8470-4889-8fbf-653b96dcc978",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
-        "tlsSettings": {
-          "allowInsecure": true,
-          "fingerprint": "chrome",
-          "serverName": "lgoin.persianmizban.com",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "lgoin.persianmizban.com"
-          },
-          "path": "/"
-        }
-      },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "138.201.159.101",
-            "port": 48097,
-            "users": [
-              {
-                "encryption": "none",
-                "id": "8b43039b-a321-426f-aa47-b1cd26fd6859",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "headers": {
-            "Host": "google.com"
-          },
-          "path": "/sandoki"
-        }
-      },
-      "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
             "address": "us.poonehi.ir",
             "port": 50063,
             "users": [
@@ -334,7 +254,55 @@
           }
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "record.persianmizban.com",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "3fc50324-8470-4889-8fbf-653b96dcc978",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": true,
+            "tryDelayMs": 250
+          }
+        },
+        "tlsSettings": {
+          "allowInsecure": true,
+          "fingerprint": "chrome",
+          "serverName": "lgoin.persianmizban.com",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "lgoin.persianmizban.com"
+          },
+          "path": "/"
+        }
+      },
+      "tag": "proxy-4"
     },
     {
       "mux": {
@@ -375,121 +343,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-6"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.25.22",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "o.metuji.com"
-          },
-          "path": "/linkvws"
-        }
-      },
-      "tag": "proxy-7"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "146.59.55.50",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "o.metuji.com"
-          },
-          "path": "/linkvws"
-        }
-      },
-      "tag": "proxy-8"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.25.25",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "f.khilei.com"
-          },
-          "path": "/linkvws"
-        }
-      },
-      "tag": "proxy-9"
+      "tag": "proxy-5"
     },
     {
       "mux": {
@@ -500,12 +354,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "dl5-fi4-cdn.fastfilecdn.org",
-            "port": 2052,
+            "address": "138.201.159.101",
+            "port": 48097,
             "users": [
               {
                 "encryption": "none",
-                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "id": "8b43039b-a321-426f-aa47-b1cd26fd6859",
                 "level": 8
               }
             ]
@@ -514,23 +368,14 @@
       },
       "streamSettings": {
         "network": "ws",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": true,
-            "tryDelayMs": 250
-          }
-        },
         "wsSettings": {
           "headers": {
-            "Host": "dl5-fi4-cdn.fastfilecdn.org"
+            "Host": "google.com"
           },
-          "path": "/"
+          "path": "/sandoki"
         }
       },
-      "tag": "proxy-10"
+      "tag": "proxy-6"
     },
     {
       "mux": {
@@ -571,24 +416,24 @@
           "path": "/"
         }
       },
-      "tag": "proxy-11"
+      "tag": "proxy-7"
     },
     {
       "mux": {
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "vmess",
+      "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "57.129.28.69",
-            "port": 443,
+            "address": "dl5-fi4-cdn.fastfilecdn.org",
+            "port": 2052,
             "users": [
               {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "level": 8,
-                "security": "auto"
+                "encryption": "none",
+                "id": "6f279958-d708-455e-8605-f4b206634bda",
+                "level": 8
               }
             ]
           }
@@ -596,20 +441,23 @@
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-          "show": false
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": true,
+            "tryDelayMs": 250
+          }
         },
         "wsSettings": {
           "headers": {
-            "Host": "baradiha.com"
+            "Host": "dl5-fi4-cdn.fastfilecdn.org"
           },
-          "path": "/linkvws"
+          "path": "/"
         }
       },
-      "tag": "proxy-12"
+      "tag": "proxy-8"
     },
     {
       "mux": {
@@ -640,7 +488,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-13"
+      "tag": "proxy-9"
     },
     {
       "mux": {
@@ -681,45 +529,7 @@
           "path": "/"
         }
       },
-      "tag": "proxy-14"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vmess",
-      "settings": {
-        "vnext": [
-          {
-            "address": "57.129.24.124",
-            "port": 443,
-            "users": [
-              {
-                "id": "03fcc618-b93d-6796-6aed-8a38c975d581",
-                "level": 8,
-                "security": "auto"
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "allowInsecure": true,
-          "serverName": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
-          "show": false
-        },
-        "wsSettings": {
-          "headers": {
-            "Host": "aveiror.com"
-          },
-          "path": "/linkvws"
-        }
-      },
-      "tag": "proxy-15"
+      "tag": "proxy-10"
     },
     {
       "protocol": "freedom",
@@ -738,7 +548,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "انقضا 17 آبان",
+  "remarks": "⭐️",
   "routing": {
     "balancers": [
       {
