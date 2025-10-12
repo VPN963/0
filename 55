@@ -588,7 +588,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "انقضا 10 آبان",
+  "remarks": "انقضا 1 آبان",
   "routing": {
     "balancers": [
       {
