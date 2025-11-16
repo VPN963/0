@@ -48,15 +48,26 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
+      "fra2-xt.aminv.ir": "178.162.242.185",
+      "irv-xt.aminv.ir": "85.90.207.15",
+      "nu1-xt.singbox.ir": "91.107.175.120",
+      "mos-xt.aminv.ir": "195.58.48.107",
+      "sto2-xt.aminv.ir": "178.73.212.11",
+      "lon-xt.aminv.ir": "173.234.79.196",
+      "ams-xt.aminv.ir": "95.211.27.206",
       "fra-nb.aminv.ir": "213.176.121.31",
-      "ist2-xt.aminv.ir": "45.92.219.228",
       "fra2-nb.aminv.ir": "213.176.121.31",
-      "ny2-nb.aminv.ir": "212.80.10.211",
       "vip.aminv.ir": "188.0.247.66",
-      "switcher-nick-croquet.freesocks.work": [
-        "92.112.126.90",
-        "2a12:bec4:1822:1b9::a"
-      ]
+      "fl.sing-box.ir": [
+        "188.114.97.3",
+        "188.114.96.3",
+        "2a06:98c1:3123::",
+        "2a06:98c1:3122::"
+      ],
+      "du-xt.aminv.ir": "31.57.228.240",
+      "ny2-xt.aminv.ir": "157.254.224.39",
+      "ny-xt.aminv.ir": "66.23.198.74",
+      "ny2-nb.aminv.ir": "212.80.10.211"
     },
     "servers": [
       "1.1.1.1",
@@ -128,6 +139,543 @@
       "settings": {
         "vnext": [
           {
+            "address": "fra2-xt.aminv.ir",
+            "port": 15443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-1"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "irv-xt.aminv.ir",
+            "port": 22443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "nu1-xt.singbox.ir",
+            "port": 23443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "mos-xt.aminv.ir",
+            "port": 25443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "chrome",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "173.234.79.196",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "tgju.org"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "sto2-xt.aminv.ir",
+            "port": 19443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-6"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5e182110-8d13-4aa4-abf6-f3081628e1d0",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "frankfort1.zirakomamle.com",
+          "path": "/speedtest.net/zirakomamle.com?ed=2560"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "lon-xt.aminv.ir",
+            "port": 12443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-8"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "91.107.175.120",
+            "port": 80,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "tcpSettings": {
+          "header": {
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "tgju.org"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
+          }
+        }
+      },
+      "tag": "proxy-9"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a2910098-6823-41a5-8fb3-ff674f649735",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": true,
+          "serviceName": "fRaNkFoRt1.zIrAkOmAmLe.CoM"
+        },
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h3",
+            "h2"
+          ],
+          "fingerprint": "firefox",
+          "serverName": "fRaNkFoRt1.zIrAkOmAmLe.CoM",
+          "show": false
+        }
+      },
+      "tag": "proxy-10"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ams-xt.aminv.ir",
+            "port": 11443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-11"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "fra-nb.aminv.ir",
             "port": 20080,
             "users": [
@@ -179,58 +727,7 @@
           }
         }
       },
-      "tag": "proxy-1"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "ist2-xt.aminv.ir",
-            "port": 17443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "firefox",
-          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
-          "serverName": "stackoverflow.com",
-          "shortId": "860ec9da9ce14366",
-          "show": false,
-          "spiderX": "/questions/11227809"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-2"
+      "tag": "proxy-12"
     },
     {
       "mux": {
@@ -292,35 +789,7 @@
           }
         }
       },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "92.112.126.90",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "9tqhMdIrTkgQ46PvhyAtMH",
-            "port": 443
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-4"
+      "tag": "proxy-13"
     },
     {
       "mux": {
@@ -331,12 +800,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "ny2-nb.aminv.ir",
-            "port": 20380,
+            "address": "8.47.69.55",
+            "port": 2053,
             "users": [
               {
                 "encryption": "none",
-                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "id": "4a92aca1-5b96-443f-af07-911826eacc04",
                 "level": 8
               }
             ]
@@ -344,45 +813,175 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "http/1.1"
+          ],
+          "fingerprint": "chrome",
+          "serverName": "aCrE-cAbLe-sKiP.nOdE-gAmE.iR",
+          "show": false
         },
-        "tcpSettings": {
-          "header": {
-            "request": {
-              "headers": {
-                "Connection": [
-                  "keep-alive"
-                ],
-                "Host": [
-                  "skyroom.online"
-                ],
-                "Pragma": "no-cache",
-                "Accept-Encoding": [
-                  "gzip, deflate"
-                ],
-                "User-Agent": [
-                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
-                ]
-              },
-              "method": "GET",
-              "path": [
-                "/"
-              ],
-              "version": "1.1"
-            },
-            "type": "http"
-          }
+        "wsSettings": {
+          "headers": {
+            "Host": "aCrE-cAbLe-sKiP.nOdE-gAmE.iR"
+          },
+          "path": "/speedtest.net/zirakomamle.com?ed=2048"
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-14"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "26e8aa9e-bac9-4e93-9ecd-60888a08ce72",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "aCrE-cAbLe-sKiP.nOdE-gAmE.iR.",
+          "path": "/speedtest.net/node-game.ir?ed=2048"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-15"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "c36737a9-1735-4d99-985d-9b3af8a94bf3",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "aCrE-cAbLe-sKiP.nOdE-gAmE.iR.",
+          "path": "/speedtest.net/node-game.ir?ed=2048"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-16"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5e5b7aa3-ccd6-4e17-baaf-2eed41ebe514",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "sWt.zIrAkOmAmLe.CoM",
+          "path": "/speedtest.net/zIrAkOmAmLe.CoM?ed=2560"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-17"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cd4137e5-fe40-4a3c-a23f-cd7892505a38",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "swt.zirakomamle.com",
+          "path": "/speedtest.net/zirakomamle.com?ed=2048"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-18"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "cb522244-ff63-4883-ae1f-87d883fb2da7",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "cLoUd.zIrAkOmAmLe.CoM.",
+          "path": "/speedtest.net/zIrAkOmAmLe.CoM?ed=2560"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-19"
     },
     {
       "mux": {
@@ -444,23 +1043,442 @@
           }
         }
       },
-      "tag": "proxy-6"
+      "tag": "proxy-20"
     },
     {
       "mux": {
         "concurrency": -1,
         "enabled": false
       },
-      "protocol": "shadowsocks",
+      "protocol": "vless",
       "settings": {
-        "servers": [
+        "vnext": [
           {
-            "address": "switcher-nick-croquet.freesocks.work",
-            "level": 8,
-            "method": "chacha20-ietf-poly1305",
-            "ota": false,
-            "password": "9tqhMdIrTkgQ46PvhyAtMH",
-            "port": 443
+            "address": "fl.sing-box.ir",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "",
+          "path": "/"
+        },
+        "network": "httpupgrade",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        }
+      },
+      "tag": "proxy-21"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "du-xt.aminv.ir",
+            "port": 20443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-22"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "682c0067-b157-40e3-99c6-2b4358f05453",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "tR.nOdE-gAmE.iR.",
+          "path": "/speedtest.net/node-game.ir?ed=2560"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-23"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "60c9982d-a89a-4ac0-a0f1-7a1c4c8ddf65",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "cLoUd.zIrAkOmAmLe.CoM",
+          "path": "/speedtest.net/zIrAkOmAmLe.CoM?ed=2560"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-24"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2083,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "a2910098-6823-41a5-8fb3-ff674f649735",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": true,
+          "serviceName": "tr.node-game.ir"
+        },
+        "network": "grpc",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h3",
+            "h2"
+          ],
+          "fingerprint": "firefox",
+          "serverName": "tr.node-game.ir",
+          "show": false
+        }
+      },
+      "tag": "proxy-25"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ny2-xt.aminv.ir",
+            "port": 24443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-26"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ny-xt.aminv.ir",
+            "port": 14443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "qhPqPQWDUVniw45FbisKM3MpvbNLhNlGorPhOPF1hC8",
+          "serverName": "stackoverflow.com",
+          "shortId": "31f2102fe5a0fca1",
+          "show": false,
+          "spiderX": "/questions/11227809"
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-27"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "66c5a0a5-3bb3-46aa-b3ae-78ccbffa89df",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "uSa.zIrAkOmAmLe.CoM",
+          "path": "/speedtest.net/zIrAkOmAmLe.CoM?ed=2048"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-28"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "199fd6c9-0c69-40e7-9bea-83c4916ea9b4",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "fInLaND.ziRakOmaMle.coM",
+          "path": "/speedtest.net/zirakomamle.com?ed=2048"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-29"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 2052,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "5c9e1b3f-57bc-48c7-a82d-dfd3f17f00ef",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "cAnAdA.nOdE-gAmE.iR",
+          "path": "/speedtest.net/nOdE-gAmE.iR?ed=2560"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-30"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "8.47.69.55",
+            "port": 8080,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "16b5906d-a20b-4929-9e60-44a9c4eef0f7",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "httpupgradeSettings": {
+          "host": "cAnAdA.nOdE-gAmE.iR.",
+          "path": "/speedtest.net/nOdE-gAmE.iR?ed=2560"
+        },
+        "network": "httpupgrade"
+      },
+      "tag": "proxy-31"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "ny2-nb.aminv.ir",
+            "port": 20380,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "d4755116-1e0d-4166-8224-88240fd2863b",
+                "level": 8
+              }
+            ]
           }
         ]
       },
@@ -477,11 +1495,64 @@
         },
         "tcpSettings": {
           "header": {
-            "type": "none"
+            "request": {
+              "headers": {
+                "Connection": [
+                  "keep-alive"
+                ],
+                "Host": [
+                  "skyroom.online"
+                ],
+                "Pragma": "no-cache",
+                "Accept-Encoding": [
+                  "gzip, deflate"
+                ],
+                "User-Agent": [
+                  "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.6478.122 Mobile Safari/537.36"
+                ]
+              },
+              "method": "GET",
+              "path": [
+                "/"
+              ],
+              "version": "1.1"
+            },
+            "type": "http"
           }
         }
       },
-      "tag": "proxy-7"
+      "tag": "proxy-32"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "104.16.53.11",
+            "port": 2082,
+            "users": [
+              {
+                "encryption": "none",
+                "id": "33e741c2-f69d-49c4-8e05-87feabf0cc8a",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "xhttp",
+        "xhttpSettings": {
+          "host": "uSa.zIrAkOmAmLe.CoM",
+          "mode": "auto",
+          "path": "/saronet"
+        }
+      },
+      "tag": "proxy-33"
     },
     {
       "protocol": "freedom",
